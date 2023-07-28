@@ -1,9 +1,97 @@
 .wrapper{
     display: grid;
-    grid: 1fr 1fr / 200px 1fr;
+    grid: 125px 1fr / 200px 1fr;
 }
 
 .dashboard{
     grid-row: span 2;
-    background: lightskyblue;
+    display:grid;
+    grid-template-rows: 20px;
+    gap: 20px;
+    background: dodgerblue;
+    color: floralwhite;
+    font-weight: 600;
+    padding: 15px;
+}
+
+.dashboard > div{
+    display: grid;
+    grid: 1fr / 50px 1fr;
+}
+
+.dashboard > div>div:first-child{
+    margin-right: 15px;
+}
+
+.header{
+    display: grid;
+    grid: 1fr 1fr / 2fr 1fr;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.h_search{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 30px 1fr;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.h_buttons, .h_person {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 12px;
+}
+
+.h_person>div:first-child{
+    justify-self: right;
+}
+
+.h_person>div:last-child{
+    justify-self: start;
+}
+
+.h_greeting{
+    display: grid;
+    grid: 1fr 1fr / 75px 1fr;
+    font-size: 1.5em;
+}
+
+.h_greeting > div:first-child{
+    grid-row: span 2;
+    align-self: center;
+}
+
+input[type=text]{
+    border: none;
+    background: lightgray;
+    border-radius: 8px;
+    width: 95%;
+    padding: 4px 4px;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.button{
+    color: floralwhite;
+    background: dodgerblue;
+    border-radius: 16px;
+    padding: 10px 13px;
+    font-size: .9em;
+    border-right: 10px;
+    width: 60%;
+    text-align: center;
+}
+
+.h_hi{
+    font-size: .75em;
+    margin-top: auto;
 }
