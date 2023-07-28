@@ -1,0 +1,9 @@
+.wrapper{
+    display: grid;
+    grid: 1fr 1fr / 200px 1fr;
+}
+
+.dashboard{
+    grid-row: span 2;
+    background: lightskyblue;
+}
